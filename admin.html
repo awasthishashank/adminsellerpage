@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seller Admin Page</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Seller Admin Page</h1>
+    <div class="container">
+        <div class="subsection">
+            <h2>Selling Price</h2>
+            <input type="number" id="sellingPrice">
+        </div>
+        <div class="subsection">
+            <h2>Product Name</h2>
+            <input type="text" id="productName">
+        </div>
+        <div class="subsection">
+            <h2>Category</h2>
+            <select id="category">
+                <option value="Food">Food</option>
+                <option value="Electronic">Electronic</option>
+                <option value="Skin Care">Skin Care</option>
+            </select>
+        </div>
+        <button onclick="addProduct()">Add Product</button>
+    </div>
+    <div class="container">
+        <h2>Products</h2>
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Selling Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Product items will be inserted here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
